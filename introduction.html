@@ -9,20 +9,29 @@
 	<script>
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
+		    	anchors: ['section1', 'section2', 'section3', 'section4'],
 		    	navigation: true,
 				navigationPosition: 'right',
+				navigationTooltips: ['First', 'Second', 'Third']
 		    });
 		});
 	</script>
 </head>
 <body style="background-color:blue">
-	
+	<ul id="menu">
+	    <li data-menuanchor="section1" class="active"><a href="#section1">First section</a></li>
+	    <li data-menuanchor="section2"><a href="#section2">Second section</a></li>
+	    <li data-menuanchor="section3"><a href="#section3">Third section</a></li>
+	    <li data-menuanchor="section4"><a href="#section4">Fourth section</a></li>
+	</ul>
 	<div id="fullpage">
-	    <div class="section" data-anchor="section1">
-	    	Some section
+	    <div class="section block">
+	    	<div class="centered">
+	    		<h1>Some section</h1>
+	    	</div>
 	    </div>
-	    <div class="section" data-anchor="section2">Some section</div>
-	    <div class="section" data-anchor="section3">Some section</div>
-	    <div class="section" data-anchor="section4">Some section</div>
+	    <div class="section">Some section</div>
+	    <div class="section">Some section</div>
+	    <div class="section">Some section</div>
 	</div>
 </body>
