@@ -1,0 +1,34 @@
+nav {
+	position: fixed;
+	z-index: 9999;
+	right: 100px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+nav a {
+	display: block;
+	position: relative;
+	color: transparent;
+	height: 50px;
+}
+
+nav a:after {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+}
+
+nav a:hover:after {
+	background: rgba(255,255,255,0.6);
+}
+
+nav a.current:after {
+	background: #fff;
+}
