@@ -22,7 +22,6 @@
   width: 300px;
 }
 
-
 #menu li {
   display:inline-block;
   margin: 10px;
@@ -56,12 +55,13 @@
 #menu li.active a{
   color: #fff;
 }
-#menu {position: fixed;
-top: 0;
-left: 0;
-height: 40px;
-z-index: 70;
-width: 100%;
-padding: 0;
-margin: 0;
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 40px;
+  /*width: 50%;*/
+  z-index: 70;
+  padding: 0;
+  margin: 0;
 }
