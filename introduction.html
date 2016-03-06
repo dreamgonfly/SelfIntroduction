@@ -6,19 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="lib/fullPage/jquery.fullPage.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/fullPage/jquery.fullPage.js"></script>
-
+	<script>
+		$(document).ready(function() {
+		    $('#fullpage').fullpage({
+		    	navigation: true,
+				navigationPosition: 'right',
+		    });
+		});
+	</script>
 </head>
 <body style="background-color:blue">
-	<header>
-		<h1>Introduction</h1>
-	</header>
-	<nav id="menu">
-		<a href="#section1" class="current">Section 1</a>
-		<a href="#section2">Section 2</a>
-		<a href="#section3">Section 3</a>
-		<a href="#section4">Section 4</a>
-		<a href="#section5">Section 5</a>
-	</nav>
+	
 	<div id="fullpage">
 	    <div class="section" data-anchor="section1">
 	    	Some section
@@ -27,14 +25,4 @@
 	    <div class="section" data-anchor="section3">Some section</div>
 	    <div class="section" data-anchor="section4">Some section</div>
 	</div>
-	<script>
-		$(document).ready(function() {
-		    $('#fullpage').fullpage();
-
-		    $('nav > a').on('click', function(){
-		    	$( 'nav > a.current').removeClass('current');
-		    	$(this).addClass('current');
-		    })
-		});
-	</script>
 </body>
