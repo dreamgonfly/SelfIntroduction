@@ -1,5 +1,5 @@
 /* This parent can be any width and height */
-.block {
+.section {
   text-align: center;
 
   /* May want to do this if there is risk the container may be narrower than the element inside */
@@ -7,7 +7,7 @@
 }
  
 /* The ghost, nudged to maintain perfect centering */
-.block:before {
+.section:before {
   content: '';
   display: inline-block;
   height: 100%;
@@ -26,7 +26,7 @@
 #menu li {
   display:inline-block;
   margin: 10px;
-  clor: #000;
+  color: #000;
   background:#fff;
   background: rgba(255,255,255, 0.5);
   -webkit-border-radius: 10px;
