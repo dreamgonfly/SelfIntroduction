@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="custom/style.css">
 	<link rel="stylesheet" type="text/css" href="lib/fullPage/jquery.fullPage.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -9,7 +9,10 @@
 
 </head>
 <body style="background-color:blue">
-	<nav>
+	<header>
+		<h1>Introduction</h1>
+	</header>
+	<nav id="menu">
 		<a href="#section1" class="current">Section 1</a>
 		<a href="#section2">Section 2</a>
 		<a href="#section3">Section 3</a>
@@ -28,11 +31,10 @@
 		$(document).ready(function() {
 		    $('#fullpage').fullpage();
 
-		    $navlinks : $( '#nav > a' ),
-
-	    	config.$navlinks.eq( config.currentLink ).removeClass( 'cbp-fbcurrent' );
-	    	config.currentLink = $section.index( 'section' );
-	    	config.$navlinks.eq( config.currentLink ).addClass( 'cbp-fbcurrent' );
+		    $('nav > a').on('click', function(){
+		    	$( 'nav > a.current').removeClass('current');
+		    	$(this).addClass('current');
+		    })
 		});
 	</script>
 </body>
