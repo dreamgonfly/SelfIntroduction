@@ -10,7 +10,7 @@
 	<script>
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
-		    	anchors: ['home', 'novel', 'section3', 'section4'],
+		    	anchors: ['s1','s2','s3','s4','s5','s6',],
 		    	navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['First', 'Second', 'Third'],
@@ -25,15 +25,22 @@
 </head>
 <body style="background-color:blue">
 	<ul id="menu">
-		<li data-menuanchor="section1" class="active"><a href="#section1">처음</a></li>
-	    <li data-menuanchor="section1" class="active"><a href="#section1">소설가</a></li>
-	    <li data-menuanchor="section2"><a href="#section2">워렌버핏</a></li>
-	    <li data-menuanchor="section3"><a href="#section3">인공지능</a></li>
-	    <li data-menuanchor="section4"><a href="#section4">정체성</a></li>
-	    <li data-menuanchor="section1"><a href="#section1">이야기꾼</a></li>
+		<li data-menuanchor="s1" class="active"><a href="#s1">처음</a></li>
+	    <li data-menuanchor="s2"><a href="#s1">소설가</a></li>
+	    <li data-menuanchor="s3"><a href="#s2">워렌버핏</a></li>
+	    <li data-menuanchor="s4"><a href="#s3">인공지능</a></li>
+	    <li data-menuanchor="s5"><a href="#s4">정체성</a></li>
+	    <li data-menuanchor="s6"><a href="#s1">이야기꾼</a></li>
 	</ul>
 
 	<div id="fullpage">
+		<div class="section">
+			<div>
+				<h1>매우 주관적인 자기소개</h1>
+				<br />
+				<h3>조 용 래</h3>
+			</div>
+		</div>
 	    <div class="section">
 	    	<div>
 	    		<h1>나는 소설가가 꿈이었다</h1>
@@ -88,16 +95,27 @@
 	    	</div>
 	    </div>
 	    <div class="section">
-	    	<div class="centered">
-	    		<h1>Some section</h1>
+	    	<div>
+	    		<h1>나는 인공지능을 만들고 싶었다</h1>
+	    		<br />
+	    		<p>스티브잡스가 스마트 혁명을 이끌었듯이</p>
+	    		<p>나도 세상을 바꾸고 싶었다.</p>
+	    		<p>다음 혁명은 인공지능이라고 생각했다.</p>
+	    		<p>인공지능을 공부하기 위해 여러곳을 기웃거려 보았지만</p>
+	    		<p>이내 너무 많은 것을 공부해야 한다는 걸 깨달았다</p>
+	    		<p>선택과 집중을 하기로 했고</p>
+	    		<p>무작정 독학으로 프로그래밍을 배우기 시작했다</p>
+	    		<p>목표는 주식투자동아리를 위한 새 웹사이트를 만드는 것이었다</p>
+	    		<p>웹사이트 만들기는 생각보다 오래 걸렸고</p>
+	    		<p>결국 1년이 지난 후에야 완성할 수 있었다</p>
 	    	</div>
 
 	    </div>
-	    <div class="section">
+<!-- 	    <div class="section">
 		    <div class="centered">
 		    	<h1>Some section</h1>
 		    </div>
-		</div>
+		</div> -->
 	</div>
 
 </body>
