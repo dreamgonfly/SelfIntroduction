@@ -13,8 +13,11 @@
 		    	anchors: ['s1','s2','s3','s4','s5','s6',],
 		    	navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['First', 'Second', 'Third'],
-				menu: '#menu'
+				navigationTooltips: ['처음', '소설가', '워렌버핏', '인공지능', '정체성', '이야기꾼'],
+				menu: '#menu',
+
+				sectionsColor : ['#f5bc1a', '#ec724c', '#4eade2', '#59bdaa', '#a8cd3a', '#e0e132'],
+
 		    });
 
 		    $('#down').on('click', function(){
@@ -26,11 +29,11 @@
 <body style="background-color:blue">
 	<ul id="menu">
 		<li data-menuanchor="s1" class="active"><a href="#s1">처음</a></li>
-	    <li data-menuanchor="s2"><a href="#s1">소설가</a></li>
-	    <li data-menuanchor="s3"><a href="#s2">워렌버핏</a></li>
-	    <li data-menuanchor="s4"><a href="#s3">인공지능</a></li>
-	    <li data-menuanchor="s5"><a href="#s4">정체성</a></li>
-	    <li data-menuanchor="s6"><a href="#s1">이야기꾼</a></li>
+	    <li data-menuanchor="s2"><a href="#s2">소설가</a></li>
+	    <li data-menuanchor="s3"><a href="#s3">워렌버핏</a></li>
+	    <li data-menuanchor="s4"><a href="#s4">인공지능</a></li>
+	    <li data-menuanchor="s5"><a href="#s5">정체성</a></li>
+	    <li data-menuanchor="s6"><a href="#s6">이야기꾼</a></li>
 	</ul>
 
 	<div id="fullpage">
