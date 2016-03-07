@@ -4,36 +4,87 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="custom/style.css">
 	<link rel="stylesheet" type="text/css" href="lib/fullPage/jquery.fullPage.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="lib/fullPage/jquery.fullPage.js"></script>
 	<script>
 		$(document).ready(function() {
 		    $('#fullpage').fullpage({
-		    	anchors: ['section1', 'section2', 'section3', 'section4'],
+		    	anchors: ['home', 'novel', 'section3', 'section4'],
 		    	navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['First', 'Second', 'Third'],
 				menu: '#menu'
 		    });
+
+		    $('#down').on('click', function(){
+		    	$.fn.fullpage.moveSectionDown();
+		    })
 		});
 	</script>
 </head>
 <body style="background-color:blue">
 	<ul id="menu">
-	    <li data-menuanchor="section1" class="active"><a href="#section1">First section</a></li>
-	    <li data-menuanchor="section2"><a href="#section2">Second section</a></li>
-	    <li data-menuanchor="section3"><a href="#section3">Third section</a></li>
-	    <li data-menuanchor="section4"><a href="#section4">Fourth section</a></li>
+		<li data-menuanchor="section1" class="active"><a href="#section1">처음</a></li>
+	    <li data-menuanchor="section1" class="active"><a href="#section1">소설가</a></li>
+	    <li data-menuanchor="section2"><a href="#section2">워렌버핏</a></li>
+	    <li data-menuanchor="section3"><a href="#section3">인공지능</a></li>
+	    <li data-menuanchor="section4"><a href="#section4">정체성</a></li>
+	    <li data-menuanchor="section1"><a href="#section1">이야기꾼</a></li>
 	</ul>
+
 	<div id="fullpage">
 	    <div class="section">
-	    	<div class="centered">
-	    		<h1>Some section</h1>
+	    	<div>
+	    		<h1>나는 소설가가 꿈이었다</h1>
+	    		<br />
+	    		<p>베르나르 베르베르를 좋아했다.</p>
+	    		<p>베르베르가 '개미'에서 개미와, 인간과, 백과사전의</p>
+	    		<p>접점에서</p>
+	    		<p>이야기를 만들어낸 것처럼</p>
+	    		<p>나도 서로 다른 것들을</p>
+	    		<p>엮고</p>
+	    		<p>문장과 문장을</p>
+	    		<p>연결해서</p>
+	    		<p>이야기를 만들어내는 것이 좋았다</p>
+	    		<p>그렇게, 나의 꿈은 소설가가 되었다</p>
+	    		<br />
+	    		<p>그러나 소설을 쓰는 일은 쉽지 않았다.</p>
+	    		<p>재능이 있어야 한다고도 했다.</p>
+	    		<p>나는 내가 가진 재능을 테스트해 보기로 했다.</p>
+	    		<p>고등학교 1학년 때,</p>
+	    		<p>나는 고교생 가장 크다는 문학상 공모에 나갔고</p>
+	    		<p>떨어졌다</p>
+	    		<p>대상을 탄 작품을 읽어보았다. 내가 가진 재능으론 도저히 쓸 수 없겠다는 생각이 들었다.</p>
+	    		<p>나는 소설가의 꿈을 포기했다.</p>
+	    		<p>그리고, 나는 더이상 소설책을 읽지 않게 되었다.</p>
 	    	</div>
+	    		<div id="footer">
+		<span id="down" style="font-size:3em" class="glyphicon glyphicon-menu-down"></span>
+	</div>
 	    </div>
 	    <div class="section">
-	    	<div class="centered">
-	    		<h1>Some section</h1>
+	    	<div>
+	    		<h1>나는 워렌버핏처럼 되고 싶었다</h1>
+	    		<br />
+	    		<p>돈을 많이 벌고 싶었다</p>
+	    		<p>세계에서 가장 돈이 많은 부자들은 어떻게 돈을 벌었을까?</p>
+	    		<p>나는 빌게이츠처럼 운영체제를 만들 줄도 몰랐고, 멕시코의 갑부처럼 정경유착을 할 수 있는 것도 아니었다.</p>
+	    		<p>워렌 버핏처럼 주식으로 돈을 버는 게 가장 만만해 보였다</p>
+	    		<p>경제를 공부해서 경제학과에 들어갔고</p>
+	    		<p>입학하자마자 주식투자학회에 들어갔다</p>
+	    		<p>주식투자학회에서 하는 일의 팔할은 기업 분석이었다.</p>
+	    		<p>현대차부터</p>
+	    		<p>분석, 분석, 분석......</p>
+
+	    		<p>4년 가까이</p>
+	    		<p>남들은 3, 4학년 때 들어가는 학회를 1학년에 들어가서</p>
+	    		<p>남들은 1년, 1년 반 하는 학회를 4년 가까이 했다.</p>
+	    		<p>대회에 나가서 우승도 해보고, 탈락도 해봤다</p>
+	    		<p>주식투자를 하면서 벌기도 했고, 잃기도 했다.</p>
+	    		<p>주식투자는 돈을 버는 가장 어려운 방법 중 하나라 걸 깨닫게 될 무렵,</p>
+	    		<p>나는 주식투자를 그만두었다.</p>
+	    		<p>그때 투자금은 거의 본전이었다.</p>
 	    	</div>
 	    </div>
 	    <div class="section">
@@ -43,9 +94,10 @@
 
 	    </div>
 	    <div class="section">
-	    <div class="centered">
-	    	<h1>Some section</h1>
-	    </div>
-</div>
+		    <div class="centered">
+		    	<h1>Some section</h1>
+		    </div>
+		</div>
 	</div>
+
 </body>
